@@ -170,12 +170,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
-    
+
 
 # Remove Packages for Dolby Support
 PRODUCT_PACKAGES += \
     RemovePackagesDolby
-    
+
 # Dolby
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
@@ -279,10 +279,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.oplus
-
 # Media
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -358,6 +354,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     oplus-fwk
+
+#FOD
+#TARGET_USES_FOD_ZPOS := true
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

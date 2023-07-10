@@ -46,9 +46,6 @@
          provisioning, availability etc -->
     <bool name="config_carrier_wfc_ims_available">true</bool>
 
-    <!-- Whether the new Auto Selection Network UI should be shown -->
-    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
-
     <!-- Safe headphone volume index. When music stream volume is below this index
     the SPL on headphone output is compliant to EN 60950 requirements for portable music
     players. -->
@@ -657,14 +654,6 @@
          non-zero. -->
     <integer name="config_defaultPeakRefreshRate">120</integer>
 
-     <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
-    <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
-
-    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
-         manually by the user. Off by default, since the expected haptic feedback may not be
-         available on some devices. -->
-    <bool name="config_enableHapticTextHandle">true</bool>
-    
     <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
     <integer name="config_udfps_illumination_transition_ms">0</integer>
     
